@@ -1,0 +1,18 @@
+//
+//  Advertise-Prefix.pch
+//  ZJLAdvertisementExample
+//
+//  Created by ZhongZhongzhong on 16/6/17.
+//  Copyright © 2016年 ZhongZhongzhong. All rights reserved.
+//
+
+#ifndef Advertise_Prefix_pch
+#define Advertise_Prefix_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Advertise_Prefix_pch */
