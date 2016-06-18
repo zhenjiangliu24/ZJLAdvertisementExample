@@ -42,13 +42,6 @@
     return [self initWithFrame:frame images:images placeholder:nil];
 }
 
-//- (NSTimeInterval)interval
-//{
-//    if (!_interval) {
-//        _interval = 2.0;
-//    }
-//    return _interval;
-//}
 
 - (void)loadAllSubviews
 {
