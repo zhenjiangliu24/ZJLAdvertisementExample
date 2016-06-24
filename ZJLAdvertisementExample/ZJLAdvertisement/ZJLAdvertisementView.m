@@ -165,6 +165,7 @@
     [_timer resumeAfterTimeInterval:_interval];
 }
 
+//function called when animation happens, no matter scroll or timer
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     [self updateCurrentPage];
