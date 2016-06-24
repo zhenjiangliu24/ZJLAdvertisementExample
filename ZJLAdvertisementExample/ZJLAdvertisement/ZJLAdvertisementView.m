@@ -31,6 +31,8 @@
         _images = images;
         _placeholder = placeholder?placeholder:[UIImage imageNamed:@"loading.png"];
         _interval = 2.0;
+        [self loadAllSubviews];
+
         [self startTimer];
     }
     return self;
@@ -44,7 +46,6 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    [self loadAllSubviews];
 }
 
 
@@ -94,14 +95,14 @@
 {
     if (_images.count>1) {
         [_timer resumeAfterTimeInterval:_interval];
-        
+        [self updateViews];
     }
 }
 
 - (void)animateChange
 {
     [_mainScrollView setContentOffset:CGPointMake(2*_imageWidth, 0) animated:YES];
-    [self updateViews];
+    
 }
 
 - (void)updateViews
